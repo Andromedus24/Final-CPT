@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="chem.css">
+		<title>Tests - Unit</title>
+	</head>
+	<body>
+		<h1 id = "header1">Tests</h1>
+		<nav>
+			<div class = "flex-container">
+				<a onclick = "getPage(0)">
+					<div class="dropdown">
+					<button class="dropbtn">Units</button>
+					<div class="dropdown-content">
+						<a onclick = "unitSet(1)">Unit 1</a>
+						<a onclick = "unitSet(2)">Unit 2</a>
+					</div>
+				</div></a>
+				<div class = "navbar flex-container">
+					<a onclick = "getPage(1)">Quizzes/Tests</a> 
+					<a onclick = "getPage(2)">Subject Recommendations</a> 
+					<a onclick = "getPage(3)">Home Page</a>
+					<a onclick = "getPage(4)">General Unit Information</a>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>	
+		<div id="center">
+				<p id = "unitLabel" style = "color: red; font-size: 20px; display: none;"></p>
+				<div id = "progressDiv" class="progress"> <!-- Progress bar/styling taken from CodePen at https://codepen.io/AmrSubZero/pen/Byybom-->
+					<div id = "progress" class="bar" style="width:0%">
+						<p id  = "percent" class="percent">0%</p>
+					</div>
+				</div>
+                <div id = "quiz">
+                </div>
+				<button id = "startQuiz" onclick = "startQuiz(myQuestions)" class = "button-9" role = "button">Start Quiz</button>
+                <button id = "submit" onclick = "checkAnswers()" class = "button-9" role = "button" style = "display: none;">Submit</button>      
+        </div>
+		<script src="chem.js"></script>
+	</body>
+</html> 
+	

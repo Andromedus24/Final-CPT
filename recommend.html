@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="chem.css">
+		<title>Recommendations</title>
+	</head>
+	<body>
+		<h1 id = "header1">Recommendations</h1>
+		<nav>
+			<div class = "flex-container">
+				<a onclick = "getPage(0)">
+					<div class="dropdown">
+					<button class="dropbtn">Units</button>
+					<div class="dropdown-content">
+						<a onclick = "unitSet(1)">Unit 1</a>
+						<a onclick = "unitSet(2)">Unit 2</a>
+					</div>
+				</div></a>
+				<div class = "navbar flex-container">
+					<a onclick = "getPage(1)">Quizzes/Tests</a> 
+					<a onclick = "getPage(2)">Subject Reccomendations</a> 
+					<a onclick = "getPage(3)">Home Page</a>
+					<a onclick = "getPage(4)">General Unit Information</a>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>	
+		<div id = "displAnswers">
+			<button id = "functionDispl" onclick = "sortIncorrect()" class = "button-9" role = "button">Display Answers</button>
+            <hr>
+		</div>
+		<script src = "chem.js"></script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="chem.css">
+		<title>Home</title>
+	</head>
+	<body>
+		<h1 id = "header1">Home</h1>
+		<nav>
+			<div class = "flex-container">
+				<a onclick = "getPage(0)">
+					<div class="dropdown">
+					<button class="dropbtn">Units</button>
+					<div class="dropdown-content">
+						<a onclick = "unitSet(1)">Unit 1</a>
+						<a onclick = "unitSet(2)">Unit 2</a>
+					</div>
+				</div></a>
+				<div class = "navbar flex-container">
+					<a onclick = "getPage(1)">Quizzes/Tests</a> 
+					<a onclick = "getPage(2)">Subject Recommendations</a> 
+					<a onclick = "getPage(3)">Home Page</a>
+					<a onclick = "getPage(4)">General Unit Information</a>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>
+		<div class = "prog-acc">
+			<h2>What our program accomplishes</h2>
+			<p>We created an AP Chem Learning Site directly correlated with Collegeboard's Standards in order to
+			help student learn and practice for both the AP Chem exam and AP Chem Unit Tests for all 9 units. Our
+			goal is to help students achieve a 5 on the exam and pass all of the unit exams within a reasonable time
+			frame. We look forward to empowering you on your AP Chem Journey!</p>
+		</div>
+		
+		<div class = "prog-op">
+			<h2>How our program operates</h2>
+			<h3>The Units</h3>
+			<p>Our program has several key components, the first of which is the different Unit Pages.
+			If you would like to find out more about each of the units, then you can click the Units 
+			button on the top left of the header bar. If you would like to access a specific units 
+			resources, then you can hover over the Units Button and different Unit options will appear.
+			By clicking on any specific unit, you can learn more about them through notes, formulas, and 
+			key concepts that we have compounded as resources. </p>
+			<h3>Quizzes & Tests</h3>
+			<p>In order to best provide users with the most realistic experience of a quiz or test, we have created various
+			quizzes and tests that the user can access and solve, which will return a score aswell as their correct and wrong
+			answers. Our focus for this part of our application is to be easy to use and practical, with a focus on providing 
+			tests that mirror Collegeboard's curriculum and simplify the process to make it easier for the user to use.
+			</p>
+			<h3>Subject Reccomendations</h3>
+			<p>This page is designed to provide the user with a set of Reccomendations that they can use to then refine those
+			respective areas we reccomend. This works by having the user provide a set of topics and key concepts that they are 
+			having trouble with and our application providing them a specific unit and area of curriculum to study. The set of key 
+			concepts and topics will be taken as per Collegeboard's curriculum, and our reccomending algorithim will be designed to 
+			provide the most accurate and helpful reccomendations that we hope will help the user improve there AP Chem skills.
+			</p>
+			<h3>The Home Page</h3>
+			<p>The Home Page has various information about our application, ranging from what our program accomplishes, to how our program
+			operates, to the various inputs and outputs we have, to our overarching goal. This part of our application will have general
+			information that we hope will enable the user to have a better user experience, navigate our website better, and understand its 
+			benefits.
+			</p>
+		</div>
+		
+		<script src="chem.js"></script>
+	</body>
+</html> 
+	
